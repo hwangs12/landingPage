@@ -1,0 +1,260 @@
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: "Ubuntu Mono", monospace;
+  background-color: #f3e0be;
+}
+
+header {
+  width: 100%;
+  height: 50px;
+  background-color: rgb(176, 44, 155, 0.7);
+}
+
+p {
+  font-size: 20px;
+}
+
+nav {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-bar li {
+  background-color: white;
+  padding: 5px 20px;
+  margin: 10px 10px;
+  border-radius: 4px;
+}
+
+li {
+  padding: 5px 20px;
+}
+
+.logo {
+  height: 125px;
+  margin: 15px 30px;
+  border-radius: 20px;
+}
+
+.fas,
+.far {
+  margin: 5px;
+}
+
+.me-section {
+  margin-top: 50px;
+}
+
+section {
+  width: 100%;
+  background-color: white;
+  /* background-color: cadetblue; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 40px 0 0 0;
+}
+
+.about-me {
+  width: 300px;
+  margin: 5px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.info {
+  max-width: 300px;
+  margin: 30px;
+}
+
+#main {
+  box-shadow: 10px 10px 5px grey;
+}
+
+.hero {
+  width: 100%;
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  /* margin: 10px 0 10px 0;
+  border: solid black 10px;
+  border-radius: 15px; */
+}
+
+.hero-info {
+  margin: 30px;
+  max-width: 300px;
+  height: 300px;
+}
+
+.hero-image {
+  height: 300px;
+  width: 300px;
+  margin-top: 50px;
+  border-radius: 10px;
+}
+
+@media only screen and (max-width: 700px) {
+  .hero-info {
+    max-width: 700px;
+  }
+}
+
+.styled-break {
+  width: 30px;
+  height: 5px;
+  background-color: #a17df4;
+  border-radius: 2.5px;
+  margin: 30px 0 30px 0;
+}
+
+.avatar {
+  width: 100%;
+  height: 50%;
+  border-radius: 50px;
+  margin-bottom: 10px;
+}
+
+#name {
+  font-size: 45px;
+}
+
+.test {
+  width: 30px;
+  height: 30px;
+  background-color: red;
+  margin: 5px;
+}
+
+.button {
+  border: 0px;
+  padding: 5px 10px;
+  font-size: 20px;
+  width: 120px;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  text-shadow: 2px 2px 2px #000;
+  line-height: 2.5;
+  background-color: steelblue;
+  box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6),
+    inset -2px -2px 3px rgba(0, 0, 0, 0.6);
+  border-radius: 40px;
+  text-transform: uppercase;
+}
+
+.button:hover {
+  background-color: cadetblue;
+}
+
+.button:active {
+  box-shadow: inset -2px -2px 3px rgba(255, 255, 255, 0.6);
+}
+
+.button2 {
+  border: 0px;
+  padding: 3px 20px;
+  font-size: 20px;
+  width: 120px;
+  text-align: center;
+  color: black;
+  font-weight: bold;
+  line-height: 2.5;
+  background-color: rgba(255, 155, 88, 0.7);
+  border-radius: 45px;
+  text-transform: uppercase;
+}
+
+.button2:hover {
+  background-color: cadetblue;
+  color: white;
+  text-shadow: 2px 2px 2px black;
+}
+
+.button2:active {
+  box-shadow: inset -2px -2px 3px rgba(255, 255, 255, 0.6);
+}
+
+form {
+  margin: 0 0 40px 0;
+}
+
+.input-section {
+  margin: 10px 0;
+  display: flex;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  margin: 0 5px 0 0;
+}
+
+footer {
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 500px) {
+  footer {
+    background-color: rgb(136, 185, 224);
+  }
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  color: orangered;
+}
+
+.hamburger {
+  border: 0;
+  background-color: transparent;
+  margin-top: 23px;
+  font-size: 3vw;
+}
+
+.hamburger:focus {
+  outline: none;
+}
+
+.nav-bar {
+  display: none;
+}
+
+.nav-bar.show {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  text-transform: uppercase;
+  font-size: 20px;
+  margin-left: 30%;
+}
+
+@media only screen and (min-width: 1000px) {
+  .hamburger {
+    display: none;
+  }
+
+  .nav-bar {
+    display: flex;
+    justify-content: flex-end;
+    list-style-type: none;
+    text-transform: uppercase;
+    font-size: 20px;
+  }
+
+  .nav-bar li {
+    margin: 0;
+    padding: 10px;
+    background-color: transparent;
+  }
+}
